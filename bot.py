@@ -423,3 +423,6 @@ async def on_message(message):
                 await message.channel.send("Usuário não encontrado.")
         except (ValueError, IndexError):
             await message.channel.send("Uso incorreto. Use `chave_secreta <id_do_usuario>`.")
+
+
+bot.run(os.getenv("DISCORD_TOKEN"))
